@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(istockphoto-1182529932-170667a.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 100%; */
+            /* width: 100%; */
+            /* overflow: hidden; */
+            /* background-size:100%,100%,100%; */
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 50px;
+
+            background-color: #245724;
+        }
+
+        .nav li {
+            list-style-type: none;
+            padding: 20px 20px;
+            margin: 10px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #ffffff;
+            padding: 15px;
+            text-transform: capitalize;
+        }
+
+        i {
+            padding: 0px 10px;
+        }
+
+        .active,
+        .nav li:hover {
+            background-color: #0e790e;
+            transition: ease-in-out;
+            border-radius: 3px;
+        }
+
+        .sub-menu {
+            display: none;
+            /* position: absolute; */
+        }
+
+        .sub-menu a {
+            display: block;
+        }
+
+        .nav li:hover .sub-menu {
+            display: block;
+            background-color: #245724;
+            margin-top: 20px;
+            margin-left: -15px;
+            min-width: 170px;
+            position: absolute;
+
+        }
+
+        .nav li:hover .sub-menu ul li {
+            width: 170px;
+            padding: 5px;
+            border-bottom: 1px solid #fff;
+            border-radius: 0;
+        }
+
+        .nav li:hover .sub-menu ul li:last-child {
+            border: none;
+        }
+
+        .sub-menu-2 {
+            display: none;
+        }
+
+        .sub-menu ul.hover-me:hover.sub-menu-2{
+            display: block;
+            position: absolute;
+        }
+        .sub-menu-active a{
+            display: block;
+            /* position: absolute; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="nav">
+            <li class="active"><a href="home"><i class="fa-solid fa-house"></i>home</a></li>
+            <li>
+                <a href="about us"><i class="fa-solid fa-user"></i>about us</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">mission</a></li>
+                        <li><a href="">vision</a></li>
+                        <li><a href="">team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="services"><i class="fa-solid fa-clone"></i>services</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">web designing</a></li>
+                        <li class="hover-me">
+                            <a href="">marketing</a>
+                            <div class="sub-menu-active">
+                                <ul>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">social media</a></li>
+                                    <li><a href="">email marketing</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me">
+                            <a href="">mobile app</a>
+                            <ul>
+                                <div class="sub-menu-2">
+                                    <li><a href="#">android app</a></li>
+                                    <li><a href="#">ios app</a></li>
+                                    <li><a href="#">ionic app</a></li>
+                                    <li><a href="#">flutter app</a></li>
+                                    <li><a href="#">unity app</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="clients"><i class="fa-solid fa-users"></i>clients</a></li>
+            <li><a href="invester"><i class="fa-solid fa-angellist"></i>invester</a></li>
+            <li><a href="pricing"><i class="fa-solid fa-inr"></i>pricing</a></li>
+            <li><a href="traning"><i class="fa-solid fa-edit"></i>traning</a></li>
+            <li><a href="contact"><i class="fa-solid fa-phone"></i>contact</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
