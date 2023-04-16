@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 290px;
+    height: 250px;
+    /* padding: 0px px; */
+    filter: grayscale(100%);
+    transition: 1s;
+   /* margin: 20px; */
+}
+h1{
+    text-align: center;
+    color: forestgreen;
+    margin: 30px 0px 50px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 40px -20px;
+}
+img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
